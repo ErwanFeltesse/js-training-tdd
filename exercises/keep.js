@@ -12,10 +12,20 @@
  *
  */
 
-// Your code:
+function keepFirst (str){
+    return  str.substring(0, 2)
+  }
+  function keepLast (str){
+      return  str.substring(str.length-2, str.length)
+  }
 
+function keepFirstLast (str){
+    return (str.charAt(0) + str.charAt(1) +str.charAt (str.length-2) + str.charAt(str.length-1))
+}
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(keepFirst('yellow'), 'ye');
+assert.strictEqual(keepLast('yellow'), 'ow');
+assert.strictEqual(keepFirstLast('yellow'), 'yeow');
 // End of tests */

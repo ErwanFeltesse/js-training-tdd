@@ -10,10 +10,19 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
-// Your code:
-
+function cutFirst (str){
+  return  str.substring(2, str.length)
+}
+function cutLast (str){
+    return str.substring(0,str.length-2)
+}
+function cutFirstLast (str){
+    return str.substring(2,str.length-2)
+}
 //* Begin of tests
 const assert = require('assert');
+assert.strictEqual(cutFirst('yellow'), 'llow');
+assert.strictEqual(cutLast('yellow'), 'yell');
+assert.strictEqual(cutFirstLast('yellow'), 'll');
 
-assert.fail('You must write your own tests');
 // End of tests */

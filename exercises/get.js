@@ -8,6 +8,9 @@
  */
 
 // Provided code:
+
+function get (key){
+
 const sourceObject = {
   num: 42,
   bool: true,
@@ -15,8 +18,8 @@ const sourceObject = {
   log: console.log,
 };
 
-// Your code:
-
+return sourceObject[key]
+}
 //* Begin of tests
 const assert = require('assert');
 
