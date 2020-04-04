@@ -8,8 +8,12 @@
  * @notions Primitive and Operators, Functions, While
  */
 
-// Your code:
-
+function multiply (num1, num2)
+let num1=0
+while (num1<num2)
+{return num1++}
+while (num1>num2)
+{return num2++}
 //* Begin of tests
 const assert = require('assert');
 
