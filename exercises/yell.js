@@ -6,10 +6,13 @@
  *
  */
 
-// Your code:
+
+function yell (str){
+    return str.toUpperCase()
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.deepStrictEqual(yell("test"), "TEST");
 // End of tests */

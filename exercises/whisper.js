@@ -7,10 +7,12 @@
  *
  */
 
-// Your code:
+function whisper (str){
+ return ("*"+str.toLowerCase()+"*")
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
-// End of tests */
+assert.strictEqual(whisper("test"), "*test*");
+// End of tests 

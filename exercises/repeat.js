@@ -7,7 +7,17 @@
  * Of course you may not use the method directly
  */
 
-// Your code:
+function repeat (string, number){
+        if (number <= 0) {
+          return "";
+        }
+        if (number === 1) {
+          return string;
+        }
+        else {
+          return string + repeat(string, number - 1); 
+        }
+    }
 
 //* Begin of tests
 const assert = require('assert');

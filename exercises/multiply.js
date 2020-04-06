@@ -8,12 +8,20 @@
  * @notions Primitive and Operators, Functions, While
  */
 
-function multiply (num1, num2)
-let num1=0
-while (num1<num2)
-{return num1++}
-while (num1>num2)
-{return num2++}
+function multiply(num1, num2){
+    if (num1 == 0 || num2 == 0) {
+        return 0;
+    }
+    
+    else if( num2 < 0 ) {
+    return - num1 + multiply(num1, num2 + 1);
+    }
+    
+    else {
+    return num1 + multiply(num1, num2 - 1);
+    }}
+
+
 //* Begin of tests
 const assert = require('assert');
 

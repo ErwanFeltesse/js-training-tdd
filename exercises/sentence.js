@@ -5,6 +5,8 @@
  * and return a string of all the element separated by a space
  *
  */
+function sentence(arr){
+    return arr.join(" ").toString()}
 
 // Your code:
 
